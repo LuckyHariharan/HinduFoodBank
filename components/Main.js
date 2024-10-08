@@ -46,7 +46,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         </h2>
         <div className="container flex flex-col items-center justify-center mx-auto">
           <Image
-            className="object-cover object-center w-1/2 mb-8 border shadow-md"
+            className="object-cover object-center w-3/4 md:sw-1/2 mb-8 border shadow-md"
             alt="Placeholder Image"
             src={hindufoodbank}
           />
