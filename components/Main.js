@@ -41,7 +41,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         </div>
       </section>
       <section ref={aboutRef}>
-        <h2 className="pt-24 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
+        <h2 className="pt-24 mb-12 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
           About
         </h2>
         <div className="container flex flex-col items-center justify-center mx-auto">
