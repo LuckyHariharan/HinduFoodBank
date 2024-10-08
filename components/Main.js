@@ -3,12 +3,19 @@ export default function Main() {
     <section class="text-gray-600 body-font">
       <div class="max-w-5xl pt-52 pb-24 mx-auto">
         <h1 class="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
-          Create your next website fast and easy
+          Our Mission
         </h1>
         <h2 class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
-          nine4 is a free to use template website for websites made
+          We are dedicated to supporting local food banks by raising funds and
+          collecting essential food items for distribution to those in need. Our
+          efforts are in partnership with a network of well-established
+          charitable organizations that have been serving the community for
+          years.
           <br />
-          with Next.js and styled with Tailwind CSS
+          Food donations are gathered at designated collection points across
+          various cities. A detailed list of these locations can be found under
+          the "Locations" tab, providing you with the necessary contacts for
+          each site.
         </h2>
         <div className="ml-6 text-center">
           <a
@@ -16,7 +23,7 @@ export default function Main() {
             href="/"
           >
             <div className="flex text-lg">
-              <span className="justify-center">View All Templates</span>
+              <span className="justify-center">Get Involved</span>
             </div>
           </a>
           <a
@@ -24,7 +31,7 @@ export default function Main() {
             href="/"
           >
             <div className="flex text-lg">
-              <span className="justify-center">Purchase</span>
+              <span className="justify-center">Donate</span>
             </div>
           </a>
         </div>

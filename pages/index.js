@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="text-black bg-black">
       <NextSeo
-        title="Home: nine4"
+        title="Home: HFB"
         description="Welcome to nine4 homepage."
         canonical="https://nine4-3.vercel.app/"
         openGraph={{
@@ -16,7 +16,7 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>nine4</title>
+        <title>HFB</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
