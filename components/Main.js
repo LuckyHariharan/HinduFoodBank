@@ -1,10 +1,14 @@
-import donations from "../img/donations.jpg";
-import hindufoodbank from "../img/hindufoodbank.jpg";
+import React, { useRef } from "react";
 import Image from "next/image";
+import hindufoodbank from "../img/hindufoodbank.jpg";
 
 export default function Main() {
+  // Define section refs
+  const missionRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <section className="text-gray-600 body-font">
+    <section ref={missionRef} className="text-gray-600 body-font">
       <div className="max-w-5xl sm:pt-28 pt-36 pb-12 mx-auto">
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
@@ -39,8 +43,8 @@ export default function Main() {
         </div>
       </div>
 
-      <h2 className="pt-16 mb-4 text-4xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
-        About{" "}
+      <h2 className="pt-16 mb-4 text-6xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
+        About
       </h2>
       <div className="container flex flex-col items-center justify-center mx-auto">
         <Image
@@ -48,52 +52,16 @@ export default function Main() {
           alt="Placeholder Image"
           src={hindufoodbank}
         />
-        {/* <Image
-          className="object-cover object-center w-1/2 mb-10 border shadow-md"
-          alt="Placeholder Image"
-          src={donations}
-        /> */}
       </div>
       <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
-        In 2023 HinduFoodBank has donated 31, 470lbs (15.5 Tonnes) of food to
+        In 2023 HinduFoodBank has donated 31,470 lbs (15.5 Tonnes) of food to
         the Local FoodBanks in Toronto. Thanks to all the community members and
-        the participating Temples. Since inception in November 2021 the
-        HinduFoodBank has donated over 72, 537 lbs(36 tons)!! of Food items.
+        the participating Temples. Since inception in November 2021, the
+        HinduFoodBank has donated over 72,537 lbs (36 tons) of Food items.
       </p>
-      {/* 
-      <div className="pt-12 pb-24 max-w-4xl mx-auto md:px-1 px-3">
-        <div className="flex flex-wrap justify-center space-y-8 md:space-y-0 md:space-x-8">
-          <div className="text-center">
-            <img
-              className="w-10 mx-auto"
-              src="https://nine4.app/favicon.png"
-              alt="Icon"
-            />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-              Custom Templates
-            </h3>
-            <p className="pt-2 text-md text-gray-400">
-              Customize and use our ready-made templates to build your next
-              project.
-            </p>
-          </div>
-          <div className="text-center">
-            <img
-              className="w-10 mx-auto"
-              src="https://nine4.app/favicon.png"
-              alt="Icon"
-            />
-            <h3 className="pt-3 font-semibold text-lg text-white">
-              Easy to Use
-            </h3>
-            <p className="pt-2 text-md text-gray-400">
-              Our tools are designed to be easy to use, even for beginners.
-            </p>
-          </div>
-        </div>
-      </div> */}
 
-      <section className="relative pb-24 bg-black">
+      {/* Contact section */}
+      <section ref={contactRef} className="relative  bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
             <h1 className="mb-6 text-5xl font-bold text-white">Contact Us</h1>

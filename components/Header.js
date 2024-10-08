@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import ganesh2 from "../img/ganesha2.jpg";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(true);
   const [flyer, setFlyer] = React.useState(false);
+
+  // Create refs for sections
+  const missionRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // Scroll to a section
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
     <header className="fixed top-0 w-full clearNav z-50">
@@ -43,32 +54,37 @@ export default function Header() {
             </svg>
           </button>
         </div>
+
         <div
-          className={
-            "md:flex flex-grow items-center" +
-            (navbarOpen ? " flex" : " hidden")
-          }
+          className={`md:flex flex-grow items-center transition-all duration-300 ease-in-out ${
+            navbarOpen ? "flex" : "hidden"
+          }`}
         >
           <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center space-x-8">
-            <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
+            <a
+              className="cursor-pointer text-gray-300 hover:text-white font-semibold"
+              onClick={() => scrollToSection(missionRef)} // Scroll to "Mission"
+            >
               Mission
             </a>
             <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
               About
             </a>
-            <div className="relative">
+
+            <div
+              className="relative"
+              onMouseEnter={() => setFlyer(true)}
+              onMouseLeave={() => setFlyer(false)}
+            >
               <button
                 type="button"
                 className="group rounded-md text-gray-300 inline-flex items-center text-base font-medium focus:outline-none"
-                onMouseEnter={() => setFlyer(!flyer)}
               >
                 <span>Donations</span>
                 <svg
-                  className={
-                    flyer === true
-                      ? "transform rotate-180 ml-3 h-5 w-5 transition ease-out duration-200"
-                      : "ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                  }
+                  className={`ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition-transform duration-300 ${
+                    flyer ? "rotate-180" : ""
+                  }`}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -81,60 +97,24 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <div
-                onMouseLeave={() => setFlyer(false)}
-                className={
-                  flyer
-                    ? "opacity-100 translate-y-0 transition ease-out duration-200 absolute z-10 -ml-4 mt-3 g327 border transform px-2 w-screen max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                    : "hidden opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                }
-              >
-                <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                  <div className="relative grid gap-6 bg-black px-2 py-6 sm:gap-8">
+              {flyer && (
+                <div className="absolute z-10 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div className="py-1">
                     <a
-                      href="/"
-                      className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-800"
+                      href="/donations"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      <div className="ml-4">
-                        <p className="text-base font-medium text-white">
-                          NINE4 TEMPLATE #1
-                        </p>
-                        <p className="mt-1 text-sm text-gray-500">
-                          First Template
-                        </p>
-                      </div>
-                    </a>
-                    <a
-                      href="/"
-                      className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-800"
-                    >
-                      <div className="ml-4">
-                        <p className="text-base font-medium text-white">
-                          NINE4 TEMPLATE #2
-                        </p>
-                        <p className="mt-1 text-sm text-gray-500">
-                          Second Template
-                        </p>
-                      </div>
-                    </a>
-                    <a
-                      href="/"
-                      className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-800"
-                    >
-                      <div className="ml-4">
-                        <p className="text-base font-medium text-white">
-                          NINE4 TEMPLATE #3
-                        </p>
-                        <p className="mt-1 text-sm text-gray-500">
-                          Third Template
-                        </p>
-                      </div>
+                      Donation Options
                     </a>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
-            <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
+
+            <a
+              className="cursor-pointer text-gray-300 hover:text-white font-semibold"
+              onClick={() => scrollToSection(contactRef)} // Scroll to "Contact"
+            >
               Contact
             </a>
           </div>
