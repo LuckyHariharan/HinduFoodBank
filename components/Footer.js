@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="pb-4 text-gray-200">
+    <footer className="pb-4 h-screen text-gray-200">
       <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
         <h2 className="text-4xl tracking-wide text-white">Donate</h2>
         <p className="text-lg leading-relaxed text-gray-400">

@@ -53,7 +53,9 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         </div>
         <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
           In 2023 HinduFoodBank has donated 31,470 lbs (15.5 Tonnes) of food to
-          the Local FoodBanks in Toronto.
+          the Local FoodBanks in Toronto. Thanks to all the community members
+          and the participating Temples. Since inception in November 2021, the
+          HinduFoodBank has donated over 72,537 lbs (36 tons) of Food items.
         </p>
       </section>
       <section ref={contactRef} className="relative pt-12 bg-black">
