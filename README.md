@@ -1,4 +1,11 @@
+# Lucky Hariharan 2024-10-08
+
+Add copy/content for hero section, and 2 other sections
+
+Translate to typescript
+
 # NINE4 TEMPLATE #3
+
 <img src="./img/main-page.png"></img>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
