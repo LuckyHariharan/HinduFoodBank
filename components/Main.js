@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
-      <div class="max-w-5xl sm:pt-28 pt-44 pb-12 mx-auto">
+      <div className="max-w-5xl sm:pt-28 pt-44 pb-12 mx-auto">
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
         </h1>
@@ -31,7 +31,7 @@ export default function Main() {
             Get Involved
           </a>
           <a
-            className="inline-flex items-center py-3 px-8 font-semibold text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-l text-lg rounded-lg shadow-lg"
+            className="inline-flex items-center py-3 px-8 font-semibold text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-gradient-to-l text-lg rounded-lg shadow-lg"
             href="/"
           >
             Donate
@@ -106,19 +106,19 @@ export default function Main() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="border border-gray-600 pr-4 pl-4 py-3 mt-2 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-600 pr-4 pl-4 py-3 mt-2 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
 
               {/* Message text area */}
               <textarea
                 placeholder="Enter your message"
                 rows="6"
-                className="border border-gray-600 pr-4 pl-4 py-3 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-600 pr-4 pl-4 py-3 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               ></textarea>
 
               {/* Submit button */}
               <a
-                className="inline-flex items-center px-10 py-3 font-medium text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition ease-in-out duration-300"
+                className="inline-flex items-center px-10 py-3 font-medium text-white bg-orange-600 rounded-lg shadow-lg hover:bg-orange-700 transition ease-in-out duration-300"
                 href="/"
               >
                 Send Message
