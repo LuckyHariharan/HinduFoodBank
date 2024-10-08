@@ -13,17 +13,16 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
           Our Mission
         </h1>
         <p className="text-xl font-normal leading-relaxed text-gray-300 text-center mb-12">
-          We are dedicated to supporting local food banks by raising funds and
-          collecting essential food items for distribution to those in need. Our
-          efforts are in partnership with a network of well-established
-          charitable organizations that have been serving the community for
-          years.
+          We are dedicated to supporting local Toronto food banks by raising
+          funds and collecting essential food items for distribution to those in
+          need. Our efforts are in partnership with a network of
+          well-established charitable organizations that have been serving the
+          community for years.
           <br />
           <br />
-          Food donations are gathered at designated collection points across
-          various cities. A detailed list of these locations can be found under
-          the "Locations" tab, providing you with the necessary contacts for
-          each site.
+          Food donations are gathered at the Hindu Heritage Center in
+          Mississauga, and distributed by a team of volunteers. Use the Links
+          below to donate non-perishable food items or cash donations.
         </p>{" "}
         <div className="flex justify-center space-x-8">
           <a
