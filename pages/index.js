@@ -5,11 +5,10 @@ import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 
 export default function Home() {
-  // Create refs in the parent component
   const missionRef = useRef(null);
   const aboutRef = useRef(null);
-
   const contactRef = useRef(null);
+  const donationRef = useRef(null); // Add donation ref
 
   return (
     <div className="text-black bg-black">
@@ -23,14 +22,14 @@ export default function Home() {
         missionRef={missionRef}
         contactRef={contactRef}
         aboutRef={aboutRef}
-      />{" "}
-      {/* Pass the refs */}
+        donationRef={donationRef} // Pass donation ref to header
+      />
       <Main
         missionRef={missionRef}
         contactRef={contactRef}
         aboutRef={aboutRef}
-      />{" "}
-      {/* Pass the refs */}
+        donationRef={donationRef} // Pass donation ref to main
+      />
       <Footer />
     </div>
   );

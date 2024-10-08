@@ -4,7 +4,7 @@ import hindufoodbank from "../img/hindufoodbank.jpg";
 
 export default function Main({ missionRef, contactRef, aboutRef }) {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font animate-fadeIn">
       <section
         ref={missionRef}
         className="max-w-5xl sm:pt-28 pt-36 pb-12 mx-auto"
@@ -41,7 +41,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         </div>
       </section>
       <section ref={aboutRef}>
-        <h2 className="pt-20 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
+        <h2 className="pt-24 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
           About
         </h2>
         <div className="container flex flex-col items-center justify-center mx-auto">

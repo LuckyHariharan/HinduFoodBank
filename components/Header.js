@@ -27,7 +27,7 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
           </a>
 
           <button
-            className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none ml-auto"
+            className="text-white  cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none ml-auto"
             type="button"
             aria-label="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
