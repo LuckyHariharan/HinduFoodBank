@@ -54,7 +54,7 @@ export default function Header() {
               Mission
             </a>
             <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
-              Mission
+              About
             </a>
             <div className="relative">
               <button

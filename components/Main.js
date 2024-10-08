@@ -1,3 +1,7 @@
+import donations from "../img/donations.jpg";
+import hindufoodbank from "../img/hindufoodbank.jpg";
+import Image from "next/image";
+
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
@@ -36,20 +40,27 @@ export default function Main() {
       </div>
 
       <h2 className="pt-16 mb-4 text-4xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
-        Clean and tidy code.
+        About{" "}
       </h2>
       <div className="container flex flex-col items-center justify-center mx-auto">
-        <img
-          className="object-cover object-center w-3/4 mb-10 border shadow-md"
+        <Image
+          className="object-cover object-center w-1/2 mb-10 border shadow-md"
           alt="Placeholder Image"
-          src="./images/placeholder.png"
+          src={hindufoodbank}
         />
+        {/* <Image
+          className="object-cover object-center w-1/2 mb-10 border shadow-md"
+          alt="Placeholder Image"
+          src={donations}
+        /> */}
       </div>
       <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
-        Here is our collection of free-to-use templates made with Next.js &
-        styled with Tailwind CSS.
+        In 2023 HinduFoodBank has donated 31, 470lbs (15.5 Tonnes) of food to
+        the Local FoodBanks in Toronto. Thanks to all the community members and
+        the participating Temples. Since inception in November 2021 the
+        HinduFoodBank has donated over 72, 537 lbs(36 tons)!! of Food items.
       </p>
-
+      {/* 
       <div className="pt-12 pb-24 max-w-4xl mx-auto md:px-1 px-3">
         <div className="flex flex-wrap justify-center space-y-8 md:space-y-0 md:space-x-8">
           <div className="text-center">
@@ -80,36 +91,37 @@ export default function Main() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <section className="relative pb-24 bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
-            <h1 className="mb-6 text-5xl font-bold text-white">Contact Us </h1>
+            <h1 className="mb-6 text-5xl font-bold text-white">Contact Us</h1>
             <h2 className="mb-8 text-2xl font-semibold text-gray-400">
-              Enter your email address and get our latest updates directly.
+              We’d love to hear from you! Send us a message and we’ll get back
+              to you as soon as possible.
             </h2>
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
+              {/* Email input field */}
               <input
                 type="email"
-                placeholder="jack@example.com"
-                className="border border-gray-600 pr-2 pl-4 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 w-1/3"
+                placeholder="Enter your email"
+                className="border border-gray-600 pr-4 pl-4 py-3 mt-2 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <input
-                type="email"
-                placeholder="jack@example.com"
-                className="border border-gray-600 pr-2 pl-4 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 w-1/3"
-              />
-              <input
-                type="email"
-                placeholder="jack@example.com"
-                className="border border-gray-600 pr-2 pl-4 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 w-1/3"
-              />
+
+              {/* Message text area */}
+              <textarea
+                placeholder="Enter your message"
+                rows="6"
+                className="border border-gray-600 pr-4 pl-4 py-3 mb-6 w-full md:w-1/2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+
+              {/* Submit button */}
               <a
-                className="inline-flex items-center px-8 py-3 ml-4 mt-2 font-medium text-black bg-white rounded-lg shadow-lg hover:bg-gray-100"
+                className="inline-flex items-center px-10 py-3 font-medium text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition ease-in-out duration-300"
                 href="/"
               >
-                Subscribe
+                Send Message
               </a>
             </div>
           </div>
