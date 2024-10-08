@@ -35,6 +35,9 @@ export default function Main() {
         </div>
       </div>
 
+      <h2 className="pt-16 mb-4 text-4xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
+        Clean and tidy code.
+      </h2>
       <div className="container flex flex-col items-center justify-center mx-auto">
         <img
           className="object-cover object-center w-3/4 mb-10 border shadow-md"
@@ -42,10 +45,6 @@ export default function Main() {
           src="./images/placeholder.png"
         />
       </div>
-
-      <h2 className="pt-16 mb-4 text-4xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
-        Clean and tidy code.
-      </h2>
       <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
         Here is our collection of free-to-use templates made with Next.js &
         styled with Tailwind CSS.

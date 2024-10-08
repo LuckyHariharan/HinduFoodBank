@@ -53,6 +53,9 @@ export default function Header() {
             <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
               Mission
             </a>
+            <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
+              Mission
+            </a>
             <div className="relative">
               <button
                 type="button"
@@ -132,7 +135,7 @@ export default function Header() {
               </div>
             </div>
             <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
-              Contact Us
+              Contact
             </a>
           </div>
         </div>
