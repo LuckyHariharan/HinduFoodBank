@@ -43,12 +43,12 @@ export default function Main() {
         </div>
       </div>
 
-      <h2 className="pt-16 mb-4 text-6xl font-semibold tracking-tighter text-center text-gray-200 lg:text-6xl">
+      <h2 className="pt-12 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
         About
       </h2>
       <div className="container flex flex-col items-center justify-center mx-auto">
         <Image
-          className="object-cover object-center w-1/2 mb-10 border shadow-md"
+          className="object-cover object-center w-1/2 mb-8 border shadow-md"
           alt="Placeholder Image"
           src={hindufoodbank}
         />
@@ -63,7 +63,7 @@ export default function Main() {
       {/* Contact section */}
       <section ref={contactRef} className="relative  bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <div className="py-24 md:py-36">
+          <div className="py-12 md:py-16">
             <h1 className="mb-6 text-5xl font-bold text-white">Contact Us</h1>
             <h2 className="mb-8 text-2xl font-semibold text-gray-400">
               We’d love to hear from you! Send us a message and we’ll get back
