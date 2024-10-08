@@ -3,7 +3,7 @@ import Image from "next/image";
 import ganesh2 from "../img/ganesha2.jpg";
 
 export default function Header() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = React.useState(true);
   const [flyer, setFlyer] = React.useState(false);
 
   return (

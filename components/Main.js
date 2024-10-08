@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="max-w-5xl sm:pt-28 pt-44 pb-12 mx-auto">
+      <div className="max-w-5xl sm:pt-28 pt-36 pb-12 mx-auto">
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
         </h1>
