@@ -97,13 +97,14 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
                 </svg>
               </button>
               {flyer && (
-                <div className="absolute z-10 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                <div className="absolute z-10 mt-2 w-60 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="py-1">
                     <a
                       href="/donations"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block px-4 mx-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Donation Options
+                      Support Hindu Food Bank via Interac e-Transfer.
+                      donate@hindufoodbank.com
                     </a>
                   </div>
                 </div>
