@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import hindufoodbank from "../img/hindufoodbank.jpg";
 
-export default function Main() {
-  // Define section refs
-  const missionRef = useRef(null);
-  const contactRef = useRef(null);
-
+export default function Main({ missionRef, contactRef, aboutRef }) {
   return (
-    <section ref={missionRef} className="text-gray-600 body-font">
-      <div className="max-w-5xl sm:pt-28 pt-36 pb-12 mx-auto">
+    <section className="text-gray-600 body-font">
+      <section
+        ref={missionRef}
+        className="max-w-5xl sm:pt-28 pt-36 pb-12 mx-auto"
+      >
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
         </h1>
@@ -25,8 +24,7 @@ export default function Main() {
           various cities. A detailed list of these locations can be found under
           the "Locations" tab, providing you with the necessary contacts for
           each site.
-        </p>
-
+        </p>{" "}
         <div className="flex justify-center space-x-8">
           <a
             className="inline-flex items-center py-3 px-8 font-semibold text-black transition duration-500 ease-in-out transform bg-white hover:bg-gray-100 text-lg rounded-lg shadow-lg"
@@ -41,27 +39,24 @@ export default function Main() {
             Donate
           </a>
         </div>
-      </div>
-
-      <h2 className="pt-12 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
-        About
-      </h2>
-      <div className="container flex flex-col items-center justify-center mx-auto">
-        <Image
-          className="object-cover object-center w-1/2 mb-8 border shadow-md"
-          alt="Placeholder Image"
-          src={hindufoodbank}
-        />
-      </div>
-      <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
-        In 2023 HinduFoodBank has donated 31,470 lbs (15.5 Tonnes) of food to
-        the Local FoodBanks in Toronto. Thanks to all the community members and
-        the participating Temples. Since inception in November 2021, the
-        HinduFoodBank has donated over 72,537 lbs (36 tons) of Food items.
-      </p>
-
-      {/* Contact section */}
-      <section ref={contactRef} className="relative  bg-black">
+      </section>
+      <section ref={aboutRef}>
+        <h2 className="pt-20 mb-4 text-6xl text-white font-semibold tracking-tighter text-center lg:text-6xl">
+          About
+        </h2>
+        <div className="container flex flex-col items-center justify-center mx-auto">
+          <Image
+            className="object-cover object-center w-1/2 mb-8 border shadow-md"
+            alt="Placeholder Image"
+            src={hindufoodbank}
+          />
+        </div>
+        <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
+          In 2023 HinduFoodBank has donated 31,470 lbs (15.5 Tonnes) of food to
+          the Local FoodBanks in Toronto.
+        </p>
+      </section>
+      <section ref={contactRef} className="relative pt-12 bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-12 md:py-16">
             <h1 className="mb-6 text-5xl font-bold text-white">Contact Us</h1>

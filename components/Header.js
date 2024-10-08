@@ -1,14 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import ganesh2 from "../img/ganesha2.jpg";
 
-export default function Header() {
-  const [navbarOpen, setNavbarOpen] = React.useState(true);
+export default function Header({ missionRef, contactRef, aboutRef }) {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [flyer, setFlyer] = React.useState(false);
-
-  // Create refs for sections
-  const missionRef = useRef(null);
-  const contactRef = useRef(null);
 
   // Scroll to a section
   const scrollToSection = (ref) => {
@@ -63,13 +59,16 @@ export default function Header() {
           <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center space-x-8">
             <a
               className="cursor-pointer text-gray-300 hover:text-white font-semibold"
-              onClick={() => scrollToSection(missionRef)} // Scroll to "Mission"
+              onClick={() => scrollToSection(missionRef)} // Use missionRef for smooth scroll
             >
               Mission
             </a>
-            <a className="cursor-pointer text-gray-300 hover:text-white font-semibold">
+            <div
+              className="cursor-pointer text-gray-300 hover:text-white font-semibold"
+              onClick={() => scrollToSection(aboutRef)}
+            >
               About
-            </a>
+            </div>
 
             <div
               className="relative"
@@ -113,7 +112,7 @@ export default function Header() {
 
             <a
               className="cursor-pointer text-gray-300 hover:text-white font-semibold"
-              onClick={() => scrollToSection(contactRef)} // Scroll to "Contact"
+              onClick={() => scrollToSection(contactRef)} // Use contactRef for smooth scroll
             >
               Contact
             </a>
