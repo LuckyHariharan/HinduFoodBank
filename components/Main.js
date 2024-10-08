@@ -1,7 +1,7 @@
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
-      <div class="max-w-5xl pt-24 pb-12 mx-auto">
+      <div class="max-w-5xl sm:pt-28 pt-44 pb-12 mx-auto">
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
         </h1>
@@ -86,13 +86,21 @@ export default function Main() {
       <section className="relative pb-24 bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
-            <h1 className="mb-6 text-5xl font-bold text-white">
-              Subscribe to our newsletter
-            </h1>
+            <h1 className="mb-6 text-5xl font-bold text-white">Contact Us </h1>
             <h2 className="mb-8 text-2xl font-semibold text-gray-400">
               Enter your email address and get our latest updates directly.
             </h2>
             <div className="flex justify-center">
+              <input
+                type="email"
+                placeholder="jack@example.com"
+                className="border border-gray-600 pr-2 pl-4 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 w-1/3"
+              />
+              <input
+                type="email"
+                placeholder="jack@example.com"
+                className="border border-gray-600 pr-2 pl-4 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-gray-100 w-1/3"
+              />
               <input
                 type="email"
                 placeholder="jack@example.com"

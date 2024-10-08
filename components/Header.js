@@ -14,7 +14,7 @@ export default function Header() {
 
           <a
             href="/"
-            className="flex text-3xl text-white font-medium mb-4 md:mb-0"
+            className="flex items-center text-2xl md:text-3xl text-white font-medium md:mb-0"
           >
             Hindu Food Bank
           </a>
