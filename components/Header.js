@@ -16,7 +16,7 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
 
   return (
     <header className="fixed top-0 w-full clearNav z-50">
-      <div className="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row">
+      <div className="max-w-5xl mx-auto flex flex-wrap p-4 flex-col md:flex-row">
         <div className="flex flex-row items-center justify-between p-3 md:p-1 space-x-4">
           <Image src={Logo} alt="Ganesh" width={50} height={50} />
 
@@ -51,7 +51,6 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
             </svg>
           </button>
         </div>
-
         <div
           className={`md:flex flex-grow items-center transition-all duration-300 ease-in-out ${
             navbarOpen ? "flex" : "hidden"
@@ -119,6 +118,11 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
               Contact
             </a>
           </div>
+        </div>
+        <div className="flex justify-between w-full  text-white text-center">
+          <span>Earn with hundred hands; donate with thousand</span>
+          <span>Nara seva is a form of Narayana Seva</span>
+          <span>शतहस्त समाहर सहस्त्र हस्त सं किर </span>
         </div>
       </div>
     </header>
