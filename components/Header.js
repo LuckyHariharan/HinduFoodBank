@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ganesh2 from "../img/ganesha2.jpg";
+import Logo from "../img/logo.jpg";
 
 export default function Header({ missionRef, contactRef, aboutRef }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -17,7 +18,7 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
     <header className="fixed top-0 w-full clearNav z-50">
       <div className="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row">
         <div className="flex flex-row items-center justify-between p-3 md:p-1 space-x-4">
-          <Image src={ganesh2} alt="Ganesh" width={50} height={50} />
+          <Image src={Logo} alt="Ganesh" width={50} height={50} />
 
           <a
             href="/"

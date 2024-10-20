@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="pb-4 h-full text-green-500">
       <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
         <h2 className="text-4xl tracking-wide text-white">Contribute</h2>
-        <p className="text-lg leading-relaxed text-gray-400">
+        <p className="text-lg leading-relaxed text-green-900">
           Support Hindu Food Bank by donating funds via Interac e-Transfer.
           Please use our contact email{" "}
           <a
@@ -27,7 +27,7 @@ export default function Footer() {
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <a
               href="/"
-              className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
+              className="text-md text-green-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
             >
               © 2024 Hindu Food Bank.
             </a>
