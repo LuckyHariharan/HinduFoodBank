@@ -11,7 +11,7 @@ export default function Home() {
   const donationRef = useRef(null); // Add donation ref
 
   return (
-    <div className="text-black bg-black">
+    <div className="text-white bg-amber-500">
       <NextSeo
         title="Home: HFB"
         description="Welcome to Hindu Food Bank homepage."

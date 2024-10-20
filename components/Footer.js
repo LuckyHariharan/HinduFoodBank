@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="pb-4 h-full text-gray-200">
+    <footer className="pb-4 h-full text-green-500">
       <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
-        <h2 className="text-4xl tracking-wide text-white">Donate</h2>
+        <h2 className="text-4xl tracking-wide text-white">Contribute</h2>
         <p className="text-lg leading-relaxed text-gray-400">
           Support Hindu Food Bank by donating funds via Interac e-Transfer.
           Please use our contact email{" "}

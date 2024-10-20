@@ -79,7 +79,7 @@ export default function Header({ missionRef, contactRef, aboutRef }) {
                 type="button"
                 className="group rounded-md text-gray-300 inline-flex items-center text-base font-medium focus:outline-none"
               >
-                <span>Donations</span>
+                <span>Contribute</span>
                 <svg
                   className={`ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition-transform duration-300 ${
                     flyer ? "rotate-180" : ""

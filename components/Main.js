@@ -12,7 +12,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         <h1 className="text-6xl text-center font-bold text-white mb-8">
           Our Mission
         </h1>
-        <p className="text-xl font-normal leading-relaxed text-gray-300 text-center mb-12">
+        <p className="text-xl font-normal leading-relaxed text-green-600 text-center mb-12">
           We are dedicated to supporting local Toronto food banks by raising
           funds and collecting essential food items for distribution to those in
           need. Our efforts are in partnership with a network of
@@ -20,9 +20,9 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
           community for years.
           <br />
           <br />
-          Food donations are gathered at the Hindu Heritage Center in
+          Food contributions are gathered at the Hindu Heritage Center in
           Mississauga, and distributed by a team of volunteers. Use the Links
-          below to donate non-perishable food items or cash donations.
+          below to donate non-perishable food items or cash gifts.
         </p>{" "}
         <div className="flex justify-center space-x-8">
           <a
@@ -33,9 +33,9 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
           </a>
           <a
             className="inline-flex items-center py-3 px-8 font-semibold text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-gradient-to-l text-lg rounded-lg shadow-lg"
-            href="/"
+            href="https://hindufoodbank.tredish.com"
           >
-            Donate
+            Contribute
           </a>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
             src={hindufoodbank}
           />
         </div>
-        <p className="mx-auto text-lg text-center text-gray-400 font-normal leading-relaxed lg:w-2/3">
+        <p className="mx-auto text-lg text-center text-green-600 font-normal leading-relaxed lg:w-2/3">
           In 2023 HinduFoodBank has donated 31,470 lbs (15.5 Tonnes) of food to
           the Local FoodBanks in Toronto. Thanks to all the community members
           and the participating Temples. Since inception in November 2021, the
