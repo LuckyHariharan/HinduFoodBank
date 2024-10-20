@@ -27,7 +27,7 @@ export default function Main({ missionRef, contactRef, aboutRef }) {
         <div className="flex justify-center space-x-8">
           <a
             className="inline-flex items-center py-3 px-8 font-semibold text-black transition duration-500 ease-in-out transform bg-white hover:bg-gray-100 text-lg rounded-lg shadow-lg"
-            href="/"
+            href="https://hindufoodbank.tredish.com/"
           >
             Get Involved
           </a>
