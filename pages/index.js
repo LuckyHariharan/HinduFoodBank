@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="text-white bg-amber-500">
       <NextSeo
-        title="Home: HFB"
+        title="Hindu Food Bank"
         description="Welcome to Hindu Food Bank homepage."
         canonical="https://hindufoodbank.com/"
         openGraph={{ url: "https://hindufoodbank.com/" }}
