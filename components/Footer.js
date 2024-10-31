@@ -8,7 +8,7 @@ export default function Footer() {
           Please use our contact email{" "}
           <a
             href="mailto:donate@hindufoodbank.com"
-            className="text-orange-400 hover:underline"
+            className="text-orange-900 hover:underline"
           >
             donate@hindufoodbank.com
           </a>{" "}
